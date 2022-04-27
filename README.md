@@ -1,5 +1,5 @@
+## Mi name is Bernabee Gonzalez! I currently studying systems analyst and I am passionate about web development.
 ## HI! This repository is form to FrontEnd Developer Bootcamp of Altimetrik!
-# Mi name is Bernabee Gonzalez! I currently studying systems analyst and I am passionate about web development.
 
 
 ### What is the bootcamp about?
