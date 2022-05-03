@@ -1,0 +1,45 @@
+[data-name="Batman"] {
+    width: 200px;
+    background-color: black;
+    height: 200px;
+}
+/* Pseudo-Class */
+/* Any button over which the user's pointer is hovering */
+button:hover {
+    color: blue;
+}
+/* Pseudo-elements */
+/* The first line of every <p> element. */
+p::first-line {
+    color: blue;
+    text-transform: uppercase;
+}
+/*  Specificity */
+
+div {
+    /* Specificity = 1 */
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+
+.class_square {
+    /* Specificity = 10 */
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+#id_scuare {
+    /* Specificity = 100 */
+    background-color: red; 
+}
+ /* Box model */
+
+.class_square {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 20px;
+    
+}
