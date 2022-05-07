@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    /* font-size: 16px; */
+}
+
+p {
+    font-size: 2rem;
+}
+.test_px {
+    width: 800px;
+    height: 400px;
+    border-style:dotted;
+    background-color: blue;
+
+}
+.test-em {
+    font-size: 16px;
+}
+
+p {
+    /* 1em = 16px */
+    font-size: 1em; 
+}
+.element {
+    width: 50rem;
+    height: 10rem;
+    background-color: blueviolet;
+}
+
+/* When the browser is at least 600px and above */
+@media screen and (min-width: 600px) {
+    .element {
+      /* Apply some styles */
+      background-color: brown;
+    }
+}
+  
