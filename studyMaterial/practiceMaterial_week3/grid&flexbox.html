@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       * {
+           /* "Normalice" */
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0;
+       } 
+       /* ======Grid====== */
+       #container {
+           width: 100%;
+           height: 100vh;
+           display: grid;
+           grid-template-columns: 40% auto;
+           grid-template-rows: 20% auto 20%;
+           gap: 5px;
+       }
+       .header-child-grid {
+           /* As the short-shorthand for grid-row-start + grid-column-start + grid-row-end + grid-column-end: */
+            grid-area: 1 / 1 / 2 / 3;  
+            background-color: blue;        
+       }
+       .main-child-grid {
+           grid-area: 2 / 1 / 3 / 3;
+           background-color: chartreuse;
+       }
+       .footer-child-grid {
+           grid-area: 3 / 1 / 4 / 3;
+           background-color: darkcyan;
+       }
+       /* ===== Flex box ====== */
+       .header-flex-container {
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+       }
+       .items-hedear {
+           width: 5rem;
+           height: 5rem;
+           background-color: crimson;
+           border-radius: 10px;
+       } 
+       .main-flex-container {
+           display: flex;
+       }
+       .main-aside_pocistion {
+           width: 30%;
+           height: 100%;
+           background-color: aqua;         
+        }
+        .main-section_information {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .main-section_information article {
+            width: 70%;
+            height: 40%;
+            background-color: brown;
+        }
+        .footer-flex-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .items-footer {
+            margin: 10px;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50px;
+            background-color:cornsilk;
+        }
+
+    </style>
     <title>Pratice Grid & flexbox layouts</title>
 </head>
 <body>
+    <div id="container">
+        <header class="header-child-grid header-flex-container" >
+            <div class="items-hedear"></div>
+            <div class="items-hedear"></div>
+            <div class="items-hedear"></div>
+            <div class="items-hedear"></div>
+        </header>
+        <main class="main-child-grid main-flex-container">
+            <aside class="main-aside_pocistion"></aside>
+            <section class="main-section_information">
+               <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe assumenda ullam ut consectetur aut, illum quas, similique asperiores unde incidunt eum praesentium iure numquam ex itaque soluta tempora sit placeat?</article>
+               <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae facere fuga quo ratione quod eligendi sint, similique eveniet, cupiditate repellat nobis itaque corrupti obcaecati? Quasi asperiores inventore reprehenderit voluptatem laboriosam.</article>
+            </section>
+        </main>
+        <footer class="footer-child-grid footer-flex-container">
+            <div class="items-footer"></div>
+            <div class="items-footer"></div>
+            <div class="items-footer"></div>
+            <div class="items-footer"></div>
+        </footer>
+    </div>
     
 </body>
 </html>
