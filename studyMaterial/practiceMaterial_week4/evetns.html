@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+       div, section, p {
+           border: 2px solid black;
+           width: 50%;
+           margin-top: 100px;
+       } 
+       section {
+           height: 100px;
+           margin: 10px;
+       }
+       p {
+        margin: 10px;
+       }
+    </Style>
+    <title>Events and Events bublbing</title>
+</head>
+<body>
+    <button id="btn-1">Type 1</button>
+    <button id="btn-2">Type 2</button>
+    
+    <div onclick="alert('Div')"> div
+        <section onclick="alert('section')">
+            section
+            <p onclick="alert('p'), event.stopPropagation()">p</p>
+        </section>
+    </div>
+    
+
+    
+    <script>
+        let btn = document.getElementById('btn-1');
+        let counter = document.querySelector('counter');
+        btn.addEventListener('click',()=> {
+            console.log('hol')
+        })
+        btn.addEventListener('click', myFunction())
+        
+    </script>
+</body>
+</html>

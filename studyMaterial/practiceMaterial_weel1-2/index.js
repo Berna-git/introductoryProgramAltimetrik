@@ -51,3 +51,5 @@ x = 3.14; // => not Error! Bad practice!
 
 "use strict";
 x = 3.14; // This will cause an error
+
+
